@@ -1,0 +1,61 @@
+/* Use Poppins as the main font family */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("station.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+/* A container to limit the width and provide a background overlay */
+.container {
+    max-width: 600px;       /* Limit the width */
+    margin: 80px auto;      /* Center it */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Headings */
+h1 {
+    margin: 10px 0;
+    color: #333;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0 0 20px;
+    color: #444;
+}
+
+/* Buttons */
+button {
+    border: none;
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: bold;
+    width: 200px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Change the colors for your buttons */
+#increment-btn {
+    background-color: #007BFF; /* A blue color */
+}
+
+#save-btn {
+    background-color: #28A745; /* A green color */
+}
+
+/* Paragraph for previous entries */
+#save-el {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
