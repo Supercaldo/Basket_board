@@ -1,22 +1,20 @@
-// Grab elements
-let saveEl = document.getElementById("save-el")
-let countEl = document.getElementById("count-el")
+let homeScore = 0;
+let guestScore = 0;
 
-// Initialize the count
-let count = 0
-
-// Increase the count and display it
-function increment() {
-    count += 1
-    countEl.textContent = count
+function addPoints(team, points) {
+    if (team === 'home') {
+        homeScore += points;
+        document.getElementById('home-score').textContent = homeScore;
+    } else if (team === 'guest') {
+        guestScore += points;
+        document.getElementById('guest-score').textContent = guestScore;
+    }
 }
 
-// Save the current count, then reset it
-function save() {
-    let countStr = count + " - "
-    saveEl.textContent += countStr
-
-    // Reset the displayed count
-    count = 0
-    countEl.textContent = 0
+function newGame() {
+    homeScore = 0;
+    guestScore = 0;
+    document.getElementById('home-score').textContent = homeScore;
+    document.getElementById('guest-score').textContent = guestScore;
+   
 }
